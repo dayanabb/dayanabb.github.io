@@ -1,0 +1,7 @@
+/*TRANSITIONS AND ANIMATIONS*/
+main>section{transition: .3s;
+}
+
+main>section:hover{
+   padding: 16px;
+}
