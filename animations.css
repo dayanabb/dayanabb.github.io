@@ -1,7 +1,8 @@
 /*TRANSITIONS AND ANIMATIONS*/
-main>section{transition: .3s;
+main section {
+  transition: 0.3s;
 }
 
-main>section:hover{
-   padding: 16px;
+main > section.grid-container > section:hover {
+  transform: scale(1.02);
 }

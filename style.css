@@ -1,84 +1,98 @@
-:root{
-    --accent:hsl(325, 96%, 33%);
-    --primary:hsl(337, 90%, 45%);
-    --whiteglass1:#fffd;
-    --whiteglass2:#fff5;
-    --whiteglass3:#fff3;
-    --darkglass1:#000b;
-    --darkglass2:#0005;
-    --darkglass3:#0003;
-    --radius1:8px;
+body{
+  color: #fffd;
+  background: linear-gradient(210deg, var(--primary), var(--accent));
+}
+a {
+  color: var(--whiteglass1);
+  text-decoration: none;
+  transition: 0.2s;
+}
+a:hover,
+a:active {
+  color: #fffe;
+  text-decoration: underline;
+}
+hr {
+  border: 1px solid #fff3;
+}
 
-    
+.quiet-anchor {
+  text-decoration: none;
+  color: inherit;
 }
-*{
-    box-sizing: border-box;    
-}
-html {
-    scroll-behavior: smooth;
-  }
-body {
-    margin: 0;
-    padding:0;
-    font-family: sans-serif;
-    font-size: 15pt;
-    line-height: 1.5;
-    color: #fffd;
-    background: linear-gradient(210deg,var(--primary),var(--accent));
-}
-a{
-    color: var(--whiteglass1);
-    text-decoration: none;
-    transition: .2s;
-}
-a:hover,a:active{
-    color: #fffe;
-    text-decoration: underline;
-}
-hr{border:1px solid #fff3 ;}
 
-.quiet-anchor{text-decoration: none;color: inherit;}
+section {
+  margin: 60px 0;
+}
+footer {
+  background: var(--darkglass1);
+}
+header > h1 {
+  margin: 0;
+}
+header img.logo {
+  margin: 0 16px;
+}
+body > header {
+  overflow-x: hidden;
+  padding: 4px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  background: var(--bar);
+  color: var(--accent);
+  backdrop-filter: blur(4px);
+  -moz-backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 999;
+  box-shadow: 0 0 6px var(--darkglass3);
+  height: 50px;
+  overflow: visible;
+}
+body main {
+  padding: 0 16px;
+  scroll-snap-type: block mandatory;
+}
 
-section{margin: 60px 0;}
-footer{background: var(--darkglass1);}
-header>h1{margin: 0 16px;}
-body>header{padding:4px 32px;position: sticky;top: 0;display: flex;
-background: rgba(165, 3, 70, 0.705);
-backdrop-filter: blur(4px);
+main > section > section {
+  max-width: 500px;
+  margin: 0 16px;
+  border: 3px dashed var(--bar);
+  border-radius: var(--radius1);
+  background: var(--darkglass2) url(https://i.ibb.co/KzJM8gk/corazoncaninologo-128.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding: 1px 32px 140px;
+  scroll-snap-align: start;
+  box-shadow: 0 2px 4px 0 var(--darkglass3);
 }
-body main{
-    padding:0 16px;
-    scroll-snap-type: block mandatory;
-}
-main>section{
-    border-radius: var(--radius1);
-    background: var(--darkglass3);
-    padding: 1px 16px;
-    scroll-snap-align: start;
-    box-shadow: 0 2px 4px 0 var(--darkglass3);
-}
-main>section:hover{
-    padding: 1px 16px;
-    background: var(--darkglass2);
-}
-body>footer{padding:8px 32px 3em;text-align: center;}
-footer>h4{color: var(--whiteglass2);}
+main > section > section h3{font-weight: normal;color: var(--whiteglass2);}
 
-.description{
-    margin: 3rem 2rem;
-    padding: 8px 16px;
-    text-align: justify;
-    line-height: 2;
+body > footer {
+  padding: 8px 32px 3em;
+  text-align: center;
+  font-size: 11pt;
 }
-.exclamation{
-    background: var(--darkglass1);
-    padding: 16px 64px 0 64px;
-    margin: auto;
-    margin-top: 12rem;
-    width: fit-content;
-    display: block;
-    text-align: center;
-    border-radius: 64px 64px 0  0;
-    font-weight: 700;
-    color: var(--whiteglass1);
+footer > h4 {
+  color: var(--whiteglass2);
+}
+
+.description {
+  margin: 3rem 2rem;
+  padding: 8px 16px;
+  text-align: justify;
+  line-height: 2;
+}
+.exclamation {
+  background: var(--darkglass1);
+  padding: 16px 64px 0 64px;
+  margin: auto;
+  margin-top: 12rem;
+  width: 50%;
+  min-width: fit-content;
+  display: block;
+  text-align: center;
+  border-radius: 64px 64px 0 0;
+  font-weight: 700;
+  color: var(--whiteglass1);
 }

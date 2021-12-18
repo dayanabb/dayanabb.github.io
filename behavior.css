@@ -7,3 +7,12 @@ body {
 main>section:hover{
     scroll-snap-align: start;
 }
+
+.grid-container{
+    display: grid;
+    align-items: stretch;
+    justify-items: center;
+}
+section.grid-container {
+    grid-template-columns: auto auto;
+}
