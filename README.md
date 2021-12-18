@@ -29,6 +29,7 @@ La no existencia, para **finales del 2022**, de perros sin **esterilizar** y **d
 - [Samira de las Mercedes\
 +53 52662875](wa.me/5352662875)\
 <samiradlmeg@estudiantes.uci.cu>
+
 ___
 
 #### ORGANIZACIONES APOYANDO
@@ -36,6 +37,7 @@ ___
 - [Bienestar Animal en Cuba](https://bacuba.org/donaciones)
 
 - [Cubanos en Defensa de los Animales](https://facebook.com/CeDACuba "Sitio web oficial de CeDA")
+
 ___
 
 #### SITIOS DE INTERÉS
