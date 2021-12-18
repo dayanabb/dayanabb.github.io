@@ -63,3 +63,22 @@ main>section:hover{
 }
 body>footer{padding:8px 32px 3em;text-align: center;}
 footer>h4{color: var(--whiteglass2);}
+
+.description{
+    margin: 3rem 2rem;
+    padding: 8px 16px;
+    text-align: justify;
+    line-height: 2;
+}
+.exclamation{
+    background: var(--darkglass1);
+    padding: 16px 64px 0 64px;
+    margin: auto;
+    margin-top: 12rem;
+    width: fit-content;
+    display: block;
+    text-align: center;
+    border-radius: 64px 64px 0  0;
+    font-weight: 700;
+    color: var(--whiteglass1);
+}
