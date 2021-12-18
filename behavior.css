@@ -1,0 +1,9 @@
+body>header{position: sticky;top: 0;}
+body {
+    scroll-snap-type: y mandatory;}
+    body main{
+        scroll-snap-type: block mandatory;
+    }
+main>section:hover{
+    scroll-snap-align: start;
+}
