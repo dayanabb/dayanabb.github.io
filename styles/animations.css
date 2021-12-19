@@ -1,0 +1,36 @@
+/*TRANSITIONS AND ANIMATIONS*/
+main section,
+footer a {
+  transition: 0.3s;
+}
+
+main > section.grid-container > section:hover {
+  transform: scale(1.02);
+}
+
+
+/*DOGS*/
+.exclamation *{transition: .4s;}
+.plate:hover {
+  transform: scale(1.1);
+}
+.plate:active {
+  transform: translateY(-2px) rotate(-0.03turn);
+}
+
+.exclamation > img:nth-child(2):hover{
+  left: 26px;
+
+  transform: skew(3deg, -8deg);
+}
+.plate:hover+img {
+  left: 38%;
+}
+.plate:hover+img+img {
+  right: 30%;
+}
+.exclamation > img:nth-child(3):hover {
+  right: 14px;
+  transform: scale(-2, 2);
+
+}
