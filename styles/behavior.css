@@ -1,11 +1,14 @@
 body>header{position: sticky;top: 0;}
-body {
-    scroll-snap-type: y mandatory;}
-    body main{
-        scroll-snap-type: block mandatory;
-    }
-main>section:hover{
+html {
+    scroll-snap-type: block proximity;
+}
+main>section>section,footer,.description,footer h4{
     scroll-snap-align: start;
+    scroll-margin-block-start: 100px;
+}
+footer{
+
+    scroll-margin-block-start: 200px;
 }
 
 .grid-container{
