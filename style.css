@@ -1,6 +1,6 @@
 body{
-  color: #fffd;
-  background: linear-gradient(210deg, var(--primary), var(--accent));
+  color: #433;
+  background: var(--bar);
 }
 a {
   color: var(--whiteglass1);
@@ -31,11 +31,11 @@ header > h1 {
   margin: 0;
 }
 header img.logo {
-  margin: 0 16px;
+  margin: 0 32px;
 }
 body > header {
   overflow-x: hidden;
-  padding: 4px;
+  padding: 24px 4px;
   position: fixed;
   top: 0;
   display: flex;
@@ -46,8 +46,6 @@ body > header {
   -webkit-backdrop-filter: blur(4px);
   z-index: 999;
   box-shadow: 0 0 6px var(--darkglass3);
-  height: 50px;
-  overflow: visible;
 }
 body main {
   padding: 0 16px;
@@ -59,9 +57,6 @@ main > section > section {
   margin: 0 16px;
   border: 3px dashed var(--bar);
   border-radius: var(--radius1);
-  background: var(--darkglass2) url(https://i.ibb.co/KzJM8gk/corazoncaninologo-128.png);
-  background-repeat: no-repeat;
-  background-position: right bottom;
   padding: 1px 32px 140px;
   scroll-snap-align: start;
   box-shadow: 0 2px 4px 0 var(--darkglass3);
