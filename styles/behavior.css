@@ -1,8 +1,8 @@
 body>header{position: sticky;top: 0;}
 html {
-    scroll-snap-type: block proximity;
+    scroll-snap-type: block mandatory;
 }
-main>section>section,footer,.description,footer h4{
+main>section>section,footer,.description,footer h4,hr{
     scroll-snap-align: start;
     scroll-margin-block-start: 100px;
 }
