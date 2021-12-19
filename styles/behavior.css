@@ -14,5 +14,5 @@ main>section:hover{
     justify-items: center;
 }
 section.grid-container {
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
 }

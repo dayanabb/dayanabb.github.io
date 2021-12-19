@@ -1,11 +1,11 @@
 :root {
-    --accent: #ac382e;
+    --accent: #c74a3e;
     --primary: hsl(337, 90%, 45%);
     --whiteglass1: #fffd;
     --whiteglass2: #fff8;
     --whiteglass3: #fff3;
     --darkglass1: #000b;
-    --darkglass2: #0005;
+    --darkglass2: #0008;
     --darkglass3: #0003;
     --radius1: 8px;
     --bar: white;
@@ -22,3 +22,4 @@
     font-family: sans-serif;
     font-size: 15pt;
     line-height: 1.5;}
+    
