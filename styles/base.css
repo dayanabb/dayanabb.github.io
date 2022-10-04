@@ -10,6 +10,8 @@
     --radius1: 8px;
     --bar: white;
   }
+
+  /*BASE STYLES. RARELY MODIFIED*/
   * {
     box-sizing: border-box;
   }

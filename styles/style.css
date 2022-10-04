@@ -35,11 +35,24 @@ footer a:hover {
   background: var(--whiteglass3);
   color: white;
 }
+footer{display: flex; flex-direction: column;}
 footer #contacto a{
 
   padding: 4px 16px;
   justify-content: start;
 }
+#contact-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#links{
+  margin-top: 32px;
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction:row ;}
+  
 
 /* ANCHORS */
 a {
@@ -88,23 +101,26 @@ body > header {
   box-shadow: 0 0 6px var(--darkglass3);
 }
 body main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0 16px;
   scroll-snap-type: block mandatory;
 }
 
-main > section > section {
-
-  width: 50%;
-  min-width: 300px;
+main .card {
+  background: #fff0;
+  backdrop-filter: blur(24px);
+  width: 100%;
+  max-width: 600px;
   margin: 16px;
   border: 3px dashed var(--bar);
   border-radius: var(--radius1);
   padding: 8px 32px;
   scroll-snap-align: start;
   box-shadow: 0 1px 4px 0 var(--darkglass3);
-  text-align: justify;
 }
-main > section > section h3 {
+main .card h3 {
   margin: 4px auto 32px;
   font-size: large;
   text-align: center;
@@ -112,48 +128,30 @@ main > section > section h3 {
   color: var(--darkglass2);
 }
 
+
+
+#objetivos-card > div{
+  display:flex;
+  justify-content: space-between;
+}
+#objetivos-card img{
+  width: 100%;
+  max-width: 150px
+}
+#description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;}
+#description img{
+  max-height: 200px;
+  height:100%
+}
 .description {
   margin: 3rem .5rem;
   padding: 8px 16px;
   line-height: 1.5;
-}
-.exclamation {
-  background: var(--darkglass1);
-  padding: 16px 32px 0;
-  margin: 12rem auto 0;
-  width: 60%;
-  min-width: fit-content;
-  display: block;
-  text-align: center;
-  border-radius: 64px 64px 0 0;
-  font-weight: 700;
-  font-size: large;
-  color: var(--whiteglass1);
-  position: relative;
-}
-.exclamation img:nth-child(2) {
-  position: absolute;
-  top: -31px;
-  left: 64px;
-}
-.exclamation img:nth-child(3) {
-  position: absolute;
-  top: -40px;
-  right: 80px;
-  transform: scale(-2, 2);
-}
-.exclamation .plate{
-  background: #444;
-  border-radius: 0 0 8px 8px;
-  position: absolute;
-  top: -12px;
-  height: 12px;
-  right: 45%;
- width: 32px;
-}
 
-
-.description,section>section{
 text-align: justify;
 text-justify: distribute;
 }

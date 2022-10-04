@@ -17,20 +17,83 @@ main > section.grid-container > section:hover {
 .plate:active {
   transform: translateY(-2px) rotate(-0.03turn);
 }
-
+.exclamation {
+  background: var(--darkglass1);
+  padding: 16px 32px 0;
+  margin: 12rem auto 0;
+  width: 60%;
+  min-width: fit-content;
+  display: block;
+  text-align: center;
+  border-radius: 64px 64px 0 0;
+  font-weight: 700;
+  font-size: large;
+  color: var(--whiteglass1);
+  position: relative;
+}
+.exclamation img:nth-child(2) {
+  position: absolute;
+  top: -31px;
+  left: 64px;
+}
+.exclamation img:nth-child(3) {
+  position: absolute;
+  top: -40px;
+  right: 80px;
+  transform: scale(-2, 2);
+}
+.exclamation .plate{
+  background: #444;
+  border-radius: 0 0 8px 8px;
+  position: absolute;
+  top: -12px;
+  height: 12px;
+  right: 45%;
+ width: 32px;
+}
+.plate.full:before{
+  position: absolute;
+  bottom:7px;
+  content:"🍗";
+}
+.plate.full:after{
+  position: absolute;
+  bottom:7px;
+  left:0;
+  transform: scaleX(-1);
+  content:"🍖";
+}
 .exclamation > img:nth-child(2):hover{
   left: 26px;
 
   transform: skew(3deg, -8deg);
 }
+/*The dogs gets closer to the plate when you hover it*/
 .plate:hover+img {
   left: 38%;
 }
 .plate:hover+img+img {
   right: 30%;
 }
+
+/*The dogs stay even closer to the plate while it's full*/
+.plate.full+img {
+  left: 44%;
+}
+.plate.full+img+img {
+  right: 38%;
+  top:-36px;
+}
 .exclamation > img:nth-child(3):hover {
   right: 14px;
   transform: scale(-2, 2);
 
+}
+.img-building{
+  filter: blur(6px);
+  z-index: -1;
+  width: 400px;
+  position: relative;
+  bottom:-260px;
+  margin-top:-300px;
 }

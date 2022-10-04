@@ -14,15 +14,6 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/behavior.css" />
     <link rel="stylesheet" href="styles/animations.css" />
-
-    <style>
-      body {
-        margin: 0;
-        font-family: sans-serif;
-        font-size: 15pt;
-        line-height: 1.5;
-      }
-    </style>
   </head>
   <body class="vscode-body vscode-light">
     <header>
@@ -39,7 +30,9 @@
     </header>
 
     <main>
+      <section id="description">
       <p class="description">
+
         Un proyecto conjunto con organizaciones de bienestar animal que busca
         <strong>desparasitar</strong>, <strong>esterilizar</strong> y
         <strong>vacunar</strong> a los perros que están
@@ -54,8 +47,9 @@
         y, cuando sea posible, procurarles un
         <strong>hogar permanente</strong> fuera de esta.
       </p>
+    </section>
       <section class="grid-container">
-        <section>
+        <section class="card">
           <h3 id="meta-a-alcanzar">META</h3>
           <p>
             La no existencia, para <strong>finales del 2022</strong>, de perros
@@ -70,8 +64,9 @@
           </p>
         </section>
 
-        <section>
+        <section class="card" id="objetivos-card">
           <h3 id="objetivos">OBJETIVOS</h3>
+          <div>
           <ul>
             <li>Censar</li>
             <li>Alimentar</li>
@@ -80,10 +75,14 @@
             <li>Vacunar</li>
             <li>Encontrar hogares permanentes</li>
           </ul>
+        </div>
         </section>
       </section>
+      <img class="img-building" src="img/buildings-toon.svg">
+        
       <span class="exclamation">
-        <div class="plate"></div>
+        <div class="plate">
+          </div>
         <img src="img/dog.svg" />
         <img src="img/dog.svg" />
         ¡Únete a esta noble causa!
@@ -93,6 +92,7 @@
     <footer>
       <div id="contacto">
       <h4>CONTACTO</h4>
+      <div id="contact-list">
         <p>
           <a href="https://wa.me/5353054361" title="+53 53054361">
             <img src="img/whatsapp.svg" />
@@ -117,11 +117,11 @@
             <img src="img/email.svg" />
             <span>samiradlmeg<small>@estudiantes.uci.cu</small></span></a
           >
-        </p>
+        </p></div>
       </div>
-      <br />
+      <div id="links">
+      <div>
       <h4 id="organizaciones-apoyando">ORGANIZACIONES QUE APOYAN</h4>
-
         <a
           href="https://facebook.com/CeDACuba"
           title="Sitio web oficial de CeDA">
@@ -133,8 +133,8 @@
           title="Twitter oficial de Protección Animal SOS-Pasos">
           Protección Animal SOS-Pasos
           </a>
-
-      <br />
+      </div>
+      <div>
       <h4 id="sitios-de-interes">SITIOS DE INTERÉS</h4>
 
         <a
@@ -147,14 +147,17 @@
      
 
       <a href="http://www.cubananimalrescue.org">Cuban Animal Rescue</a></p>
-
-      <hr />
+      </div>
+    </div>
+      <hr/>
         <a
           href="https://www.uci.cu"
           title="Sitio web oficial de la Universidad de las Ciencias Informáticas"
           >Universidad de las Ciencias Informáticas</a
         >
-      </p>
+      
     </footer>
+
+    <script defer src="script.js" />
   </body>
 </html>
