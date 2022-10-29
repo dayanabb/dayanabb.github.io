@@ -4,9 +4,6 @@ body {
   overflow-x: hidden;
 }
 /* HEADER */
-header{
-  display: flex;
-}
 header .right-container{
   padding-right: 32px;
   display: flex;
