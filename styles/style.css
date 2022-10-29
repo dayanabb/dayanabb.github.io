@@ -33,7 +33,9 @@ header .social:hover{
   justify-content: space-between;
 }
 #embededPosts iframe{
-  min-width: 400px;
+  min-width: 300px;
+  width: 90vw;
+  max-width: 500px;
   margin: 4px;
 }
 /* FOOTER */
