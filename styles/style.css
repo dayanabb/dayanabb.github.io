@@ -5,13 +5,13 @@ body {
 }
 /* EMBEDED */
 #embededPosts{
-  width:90%;
+  width:95%;
   border: 2px solid #0002;
   padding: 8px;
   border-radius: var(--radius1);
   display: flex;
   overflow: auto ;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 #embededPosts iframe{
   
