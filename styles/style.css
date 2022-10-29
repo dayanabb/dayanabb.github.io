@@ -32,7 +32,7 @@ header .social:hover{
   padding: 8px;
   border-radius: var(--radius1);
   display: flex;
-  overflow:auto ;
+  overflow:scroll ;
   justify-content: space-between;
 }
 #embededPosts iframe{
