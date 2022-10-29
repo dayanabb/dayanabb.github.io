@@ -37,6 +37,7 @@ header .social:hover{
 }
 #embededPosts iframe{
   min-width: 400px;
+  margin: 4px;
 }
 /* FOOTER */
 
