@@ -36,7 +36,7 @@ header .social:hover{
   justify-content: space-between;
 }
 #embededPosts iframe{
-  
+  min-width: 400px;
 }
 /* FOOTER */
 
