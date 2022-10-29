@@ -1,6 +1,6 @@
 body>header{position: fixed;top: 0;}
-html {
-    /* scroll-snap-type: block; */
+/* html {
+    scroll-snap-type: block; 
 }
 main>section>section,footer,.description,footer h4,hr{
     scroll-snap-align: start;
@@ -9,7 +9,7 @@ main>section>section,footer,.description,footer h4,hr{
 footer{
 
     scroll-margin-block-start: 200px;
-}
+}*/
 
 .grid-container{
     display: grid;
