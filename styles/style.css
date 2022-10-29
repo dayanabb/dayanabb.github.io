@@ -3,14 +3,37 @@ body {
   background: var(--bar);
   overflow-x: hidden;
 }
+/* HEADER */
+header{
+  display: flex;
+}
+header .right-container{
+  padding-right: 32px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+ justify-content: right;
+
+}
+header .social img{
+  border-radius: var(--radius1);
+  background:dodgerblue;
+  width: 30px;
+}
+header .social:hover{
+  transform: scale(1.1);
+}header .social:active{
+  transform: scale(1);
+}
 /* EMBEDED */
 #embededPosts{
   width:95%;
-  border: 2px solid #0002;
+  height: 500px;
+  /* border: 2px solid #0002; */
   padding: 8px;
   border-radius: var(--radius1);
   display: flex;
-  overflow: auto ;
+  overflow:auto ;
   justify-content: space-between;
 }
 #embededPosts iframe{
